@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:background="#BABACA"
+        android:src="@drawable/ic_person_white_24dp"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent">
+
+            <ImageView
+                android:layout_weight="2"
+                android:src="@drawable/google"
+                android:layout_height="40dp"
+                android:layout_width="50dp"
+                />
+            <LinearLayout
+                android:layout_weight="8"
+                android:layout_height="40dp"
+                android:orientation="vertical">
+                <TextView
+                    android:text="Save as"
+                    android:gravity="center_vertical"
+                    android:layout_height="20dp"
+                    android:layout_width="match_parent" />
+                <TextView
+                    android:text="gustavo.copini@gmail.com"
+                    android:gravity="center_vertical"
+                    android:layout_height="20dp"
+                    android:layout_width="match_parent" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_weight="2"
+                android:src="@drawable/arrow"
+                android:layout_height="40dp"
+                android:layout_width="50dp"
+                android:tint="#BABACA"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent">
+
+            <ImageView
+                android:layout_weight="2"
+                android:src="@drawable/ic_person_white_24dp"
+                android:layout_height="40dp"
+                android:layout_width="50dp"
+                android:tint="#BABACA"
+                />
+            <EditText
+                android:layout_weight="8"
+                android:layout_height="40dp"
+                android:text="Name"
+                android:textColor="#BABACA">
+            </EditText>
+
+
+            <ImageView
+                android:layout_weight="2"
+                android:src="@drawable/arrow"
+                android:layout_height="40dp"
+                android:layout_width="50dp"
+                android:tint="#BABACA"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent">
+
+            <Space
+                android:layout_weight="2"
+                />
+
+            <EditText
+                android:layout_weight="8"
+                android:layout_height="40dp"
+                android:text="Last Name"
+                android:textColor="#BABACA">
+            </EditText>
+
+            <Space
+                android:layout_weight="2"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent">
+
+            <ImageView
+                android:layout_weight="2"
+                android:src="@drawable/phone"
+                android:layout_height="40dp"
+                android:layout_width="50dp"
+                android:tint="#BABACA"
+                />
+
+            <EditText
+                android:layout_weight="8"
+                android:layout_height="40dp"
+                android:text="Phone"
+                android:textColor="#BABACA">
+            </EditText>
+
+            <Space
+                android:layout_weight="2"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent">
+
+            <Space
+                android:layout_weight="2"
+                />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_weight="2"
+                android:textColor="#BABACA"/>
+
+            <Space
+                android:layout_weight="8"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent">
+
+            <ImageView
+                android:layout_weight="2"
+                android:src="@drawable/email"
+                android:layout_height="40dp"
+                android:layout_width="50dp"
+                android:tint="#BABACA"
+                />
+
+            <EditText
+                android:layout_weight="8"
+                android:layout_height="40dp"
+                android:text="Email"
+                android:textColor="#BABACA">
+            </EditText>
+
+            <Space
+                android:layout_weight="2"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent">
+
+            <Space
+                android:layout_weight="2"
+                />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_weight="2"
+                android:textColor="#BABACA"/>
+
+            <Space
+                android:layout_weight="8"
+                />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+
+</LinearLayout>
