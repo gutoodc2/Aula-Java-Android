@@ -1,4 +1,4 @@
-package gustavo.primeirainterface;
+package gustavo.contatinho;
 
 import org.junit.Test;
 

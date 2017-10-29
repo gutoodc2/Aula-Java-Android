@@ -1,4 +1,4 @@
-package gustavo.primeirainterface;
+package gustavo.contatinho;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("gustavo.primeirainterface", appContext.getPackageName());
+        assertEquals("gustavo.contatinho", appContext.getPackageName());
     }
 }
