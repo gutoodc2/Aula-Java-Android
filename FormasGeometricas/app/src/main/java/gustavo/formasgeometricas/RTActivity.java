@@ -25,9 +25,7 @@ public class RTActivity extends AppCompatActivity {
             altura = bundle.getDouble("ALTURA");
 
             resultado = (base * altura)/2;
-
-            String resultadoString= Double.toString(resultado);
-            tvResultado.setText(resultadoString);
+            tvResultado.setText( String.format("%.2f", resultado));
 
         }
 

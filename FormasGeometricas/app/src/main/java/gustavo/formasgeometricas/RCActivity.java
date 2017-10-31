@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import org.w3c.dom.Text;
 
 public class RCActivity extends AppCompatActivity {
@@ -26,8 +25,7 @@ public class RCActivity extends AppCompatActivity {
         if(bundle.containsKey("RAIO")){
             raio = bundle.getDouble("RAIO");
             resultado = 3.14159265359 * (raio*raio);
-            String raioString= Double.toString(resultado);
-            tvResultado.setText(raioString);
+            tvResultado.setText(String.format("%.2f", resultado));
         }
 
     }
