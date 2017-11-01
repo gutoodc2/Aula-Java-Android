@@ -9,19 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DCActivity" />
-        <activity android:name=".RCActivity" />
-        <activity android:name=".DRActivity" />
-        <activity android:name=".RRActivity" />
-        <activity android:name=".DTActivity" />
-        <activity android:name=".RTActivity"></activity>
+        <activity android:name=".DCActivity" android:screenOrientation="portrait" />
+        <activity android:name=".RCActivity" android:screenOrientation="portrait" />
+        <activity android:name=".DRActivity" android:screenOrientation="portrait" />
+        <activity android:name=".RRActivity" android:screenOrientation="portrait" />
+        <activity android:name=".DTActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".RTActivity" android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

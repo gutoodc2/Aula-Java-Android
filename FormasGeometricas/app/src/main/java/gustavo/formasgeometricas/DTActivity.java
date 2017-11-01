@@ -36,7 +36,7 @@ public class DTActivity extends AppCompatActivity {
         intencao.putExtra("BASE",base);
         double altura = Double.parseDouble(etAltura.getText().toString());
         intencao.putExtra("ALTURA",altura);
-
+        finish();
         startActivity(intencao);
 
     }

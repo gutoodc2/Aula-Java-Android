@@ -30,7 +30,7 @@ public class DCActivity extends AppCompatActivity {
 
         double raio = Double.parseDouble(etRaio.getText().toString());
         intencao.putExtra("RAIO",raio);
-
+        finish();
         startActivity(intencao);
 
     }

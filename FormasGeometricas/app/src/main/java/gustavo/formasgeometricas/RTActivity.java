@@ -33,8 +33,7 @@ public class RTActivity extends AppCompatActivity {
 
     public void calcularNovamente(View quemClicou){
 
-        Intent intencao = new Intent(getApplicationContext(), MainActivity.class);
-        startActivity(intencao);
+        finish();
 
     }
 

@@ -34,8 +34,7 @@ public class RRActivity extends AppCompatActivity {
 
     public void calcularNovamente(View quemClicou){
 
-        Intent intencao = new Intent(getApplicationContext(), MainActivity.class);
-        startActivity(intencao);
+        finish();
 
     }
 
