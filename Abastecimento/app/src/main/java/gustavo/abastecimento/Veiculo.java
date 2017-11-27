@@ -13,8 +13,8 @@ public class Veiculo implements Serializable {
     private String data;
     private String posto;
 
-    public Veiculo(double kilometragem, double litros, String data, String posto){
-        this.quilometragem = kilometragem;
+    public Veiculo(double quilometragem, double litros, String data, String posto){
+        this.quilometragem = quilometragem;
         this.litros = litros;
         this.data = data;
         this.posto = posto;
