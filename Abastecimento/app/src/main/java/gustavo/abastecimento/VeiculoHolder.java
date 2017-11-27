@@ -5,6 +5,9 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+/**
+ * Created by gusta on 24/11/2017.
+ */
 
 public class VeiculoHolder extends RecyclerView.ViewHolder {
 

@@ -9,6 +9,10 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+/**
+ * Created by gusta on 24/11/2017.
+ */
+
 public class MainActivity extends AppCompatActivity {
 
     ArrayList<Veiculo> lista = new ArrayList<>();
@@ -37,15 +41,14 @@ public class MainActivity extends AppCompatActivity {
         if (requestCode == 1) {
             if(resultCode == Activity.RESULT_OK){
                 lista = (ArrayList<Veiculo>) data.getSerializableExtra("lista");
-                double litros=0;
-                double quilometragem=0;
+                double litros=0,quilometragem=0;
                 for(int i = 0; i < lista.size(); i++){
                     litros+=lista.get(i).getLitros();
                     quilometragem+=lista.get(i).getQuilometragem();
                 }
                 quilometragem/=litros;
-                TextView autonomia  = (TextView) findViewById(R.id.tvResultado);
-                autonomia.setText(String.format("%.4f", quilometragem));
+                TextView tvResultado  = (TextView) findViewById(R.id.tvResultado);
+                tvResultado.setText(String.format("%.4f", quilometragem));
             }
         }
     }

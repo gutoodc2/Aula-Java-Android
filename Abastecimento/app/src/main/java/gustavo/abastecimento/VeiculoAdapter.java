@@ -8,6 +8,10 @@ import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
+/**
+ * Created by gusta on 24/11/2017.
+ */
+
 public class VeiculoAdapter extends RecyclerView.Adapter {
 
     private ArrayList<Veiculo> listaVeiculos;
@@ -21,7 +25,6 @@ public class VeiculoAdapter extends RecyclerView.Adapter {
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View layoutView = LayoutInflater.from(parent.getContext()).inflate(R.layout.veiculo_item, parent, false);
         VeiculoHolder gaveta = new VeiculoHolder(layoutView);
-        Log.d("RV", "Criando a gaveta "+gaveta.toString());
         return gaveta;
     }
 
@@ -30,7 +33,6 @@ public class VeiculoAdapter extends RecyclerView.Adapter {
         VeiculoHolder gaveta = (VeiculoHolder) holder;
         Veiculo atual = this.listaVeiculos.get(position);
         gaveta.atualizaOVeiculoQueVoceEstaApresentando( atual );
-        Log.d("RV", "Atualizando a gaveta "+gaveta.toString()+" com o objteto "+position);
 
     }
 

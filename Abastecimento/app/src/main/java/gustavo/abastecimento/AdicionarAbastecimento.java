@@ -15,6 +15,10 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+/**
+ * Created by gusta on 24/11/2017.
+ */
+
 public class AdicionarAbastecimento extends AppCompatActivity {
 
 
@@ -43,15 +47,15 @@ public class AdicionarAbastecimento extends AppCompatActivity {
         Spinner posto = (Spinner) findViewById(R.id.spPosto);
 
 
-            double km = Double.parseDouble(quilometragem.getText().toString());
+            double quilometros = Double.parseDouble(quilometragem.getText().toString());
 
             if (!lista.isEmpty()) {
-                if (km < lista.get(lista.size() - 1).getQuilometragem()) {
+                if (quilometros < lista.get(lista.size() - 1).getQuilometragem()) {
                     Toast.makeText(getApplicationContext(), "Quilometragem Inválida", Toast.LENGTH_SHORT).show();
                     return;
                 }
             }
-            Veiculo novo = new Veiculo(km, Double.parseDouble(litros.getText().toString()), data.getText().toString(), posto.getSelectedItem().toString());
+            Veiculo novo = new Veiculo(quilometros, Double.parseDouble(litros.getText().toString()), data.getText().toString(), posto.getSelectedItem().toString());
 
             lista.add(novo);
 
