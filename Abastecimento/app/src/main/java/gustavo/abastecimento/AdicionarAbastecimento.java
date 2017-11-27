@@ -46,18 +46,15 @@ public class AdicionarAbastecimento extends AppCompatActivity {
         EditText data = (EditText) findViewById(R.id.etData);
         Spinner posto = (Spinner) findViewById(R.id.spPosto);
 
-
-            double quilometros = Double.parseDouble(quilometragem.getText().toString());
-
             if (!lista.isEmpty()) {
-                if (quilometros < lista.get(lista.size() - 1).getQuilometragem()) {
+                if (Double.parseDouble(quilometragem.getText().toString()) < lista.get(lista.size() - 1).getQuilometragem()) {
                     Toast.makeText(getApplicationContext(), "Quilometragem Inválida", Toast.LENGTH_SHORT).show();
                     return;
                 }
             }
-            Veiculo novo = new Veiculo(quilometros, Double.parseDouble(litros.getText().toString()), data.getText().toString(), posto.getSelectedItem().toString());
+            Veiculo abastecimento = new Veiculo(Double.parseDouble(quilometragem.getText().toString()), Double.parseDouble(litros.getText().toString()), data.getText().toString(), posto.getSelectedItem().toString());
 
-            lista.add(novo);
+            lista.add(abastecimento);
 
             Intent intencao = new Intent(this, MainActivity.class);
             intencao.putExtra("lista", lista);
