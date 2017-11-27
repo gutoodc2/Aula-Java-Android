@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Abastecimento</string>
+    <string name="posto_prompt">Escolha um Posto</string>
+    <string-array name="postos">
+        <item>Texaco</item>
+        <item>Shell</item>
+        <item>Petrobras</item>
+        <item>Ipiranga</item>
+    </string-array>
 </resources>
