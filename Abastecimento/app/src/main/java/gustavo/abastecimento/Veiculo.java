@@ -1,25 +1,21 @@
 package gustavo.abastecimento;
 
+import android.text.Editable;
+
 import java.io.Serializable;
+
+import io.realm.RealmObject;
 
 /**
  * Created by gusta on 24/11/2017.
  */
 
-public class Veiculo implements Serializable {
+public class Veiculo extends RealmObject {
 
     private double quilometragem;
     private double litros;
     private String data;
     private String posto;
-
-    public Veiculo(double quilometragem, double litros, String data, String posto){
-        this.quilometragem = quilometragem;
-        this.litros = litros;
-        this.data = data;
-        this.posto = posto;
-
-    }
 
     public double getQuilometragem() {
         return quilometragem;

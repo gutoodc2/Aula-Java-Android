@@ -27,7 +27,7 @@ public class VeiculoHolder extends RecyclerView.ViewHolder {
 
     public void atualizaOVeiculoQueVoceEstaApresentando(Veiculo v){
 
-        tvData.setText( v.getData() );
+        tvData.setText(v.getData());
         tvLitros.setText( Double.toString( v.getLitros()));
         String s = ""+v.getQuilometragem();
         tvQuilometragem.setText(s);
